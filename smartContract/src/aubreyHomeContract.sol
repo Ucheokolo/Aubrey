@@ -23,5 +23,22 @@ contract Aubrey {
         string country;
         string State;
         uint phoneNumber;
+        uint joinDate;
     }
+
+    constructor() {
+        aubreyAdmin = msg.sender;
+    }
+
+    function registerUser(
+        address _userAddress,
+        string memory _firstName,
+        string memory _lastName,
+        uint _age,
+        gender _sex,
+        string memory _email,
+        string memory _country,
+        string memory _state,
+        uint _phoneNumber
+    ) public {}
 }
